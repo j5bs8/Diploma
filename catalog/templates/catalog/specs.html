@@ -1,0 +1,24 @@
+{% extends 'catalog/layout.html' %}
+
+
+{% block content %}
+<aside class="side_bar">     
+    <ul>
+          <h2 class="navi_header">Навигация</h2>
+          <li><a href="{% url 'db-detail' 1 %}"> Biostar A68N-2100K </a></li>
+          <li><a href="{% url 'db-detail' 2 %}">Biostar H310MHP</a></li>
+          <li><a href="{% url 'db-detail' 3 %}">GIGABYTE B560M DS3H V2</a></li>
+          <li><a href="{% url 'db-detail' 4 %}">MSI MPG B550 GAMING PLUS</a></li>
+          <li><a href="{% url 'db-detail' 5 %}">GIGABYTE B660M GAMING</a></li>
+    </ul>
+</aside>
+
+<main class="record_window">
+    {% block record %}
+    {% endblock %}
+</main>
+{% endblock %}
+
+
+
+

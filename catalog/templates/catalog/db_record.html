@@ -1,0 +1,51 @@
+{% extends 'catalog/specs.html' %}
+
+{% block record %}
+
+<h2>Общие характеристики</h2>
+
+<img id="scheme" src="../static/catalog/images/W820_enl.jpg" alt="motherboard">
+
+<div class="record">
+    <table class="table_blur">
+        <tr>
+            <th>Наименование характеристики</th>
+            <th>Значение</th>
+        </tr>
+        <tr>
+            <td>Модель материнской платы</td>
+            <td>{{ record.model }}</td>
+        </tr>
+        <tr>
+            <td>Сокет для процессора</td>
+            <td>{{ record.cpu }}</td>
+        </tr>
+        <tr>
+            <td>Оперативная память</td>
+            <td>{{ record.memory }}</td>
+        </tr>
+        <tr>
+            <td>Тип PCI устройства</td>
+            <td>{{ record.pci }}</td>
+        </tr>
+        <tr>
+            <td>Описание задней панели</td>
+            <td>{{ record.back_panel }}</td>
+        </tr>
+        <tr>
+            <td>Аудио</td>
+            <td>{{ record.audio }}</td>
+        </tr>
+        <tr>
+            <td>Сетевой адаптер</td>
+            <td>{{ record.network }}</td>
+        </tr>
+        <tr>
+            <td>Ссылка на покупку</td>
+            <td>{{ record.shop_url}}</td>
+        </tr>
+    </table>
+    
+</div>
+
+{% endblock %}

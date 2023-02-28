@@ -1,0 +1,19 @@
+{% extends 'catalog/layout.html' %}
+
+
+{% block content %}
+
+<div class="news_bar">
+    <h1>Новости и связанные темы</h1>
+    {% for i in news %}
+        <div class='alert alert-warning'>
+            <h2>{{ i.title }}</h2>
+            <h3>{{ i.anons }}</h3>
+            <p>{{ i.full_text }}</p>
+            <h4>{{ i.data }}</h4>
+        </div>
+        
+    {% endfor %}
+</div>
+    
+{% endblock %}
